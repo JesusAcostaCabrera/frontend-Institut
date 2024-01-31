@@ -1,0 +1,105 @@
+:root{
+    --form-bg-color: #F2FDFF;
+    --background-color: #A9E4EF;
+    /* --font-color: #FCFFFD; */
+    --font-color: #2E282A;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: var(--background-color);
+    color: var(--font-color);
+    align-items: center;
+    text-align: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    min-width: 400px;
+    border-radius: 3rem;
+    margin-top: 6rem;
+    background: var(--form-bg-color);
+    align-items: center;
+}
+
+.login > img{
+    height: 250px;
+    width: 250px;
+    margin-bottom: 1rem;
+}
+
+.login > .username,
+.login > .password{
+    font-size: 1.25rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+
+.login > .username > .username-data
+.login > .password > .password-data{
+    width: 200px;
+    height: 100px;
+}
+
+.login > a > .sign-in,
+.login > a > .create-account{
+    padding-block: 0.15rem;
+    width: 160px;
+    margin-bottom: 1rem;
+    background: #195176;
+    color: var(--form-bg-color);
+    transition: all 0.5s;
+}
+
+.login > a > .sign-in:hover,
+.login > a > .create-account:hover{
+    color: #195176;
+    background: transparent;
+}
+
+.login > .forgot-password {
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: 300;
+}
+
+footer{
+    background: #195176;
+    display: block;
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer > .content {
+    display: flex;
+    color: var(--form-bg-color);
+    font-weight: 100;
+}
+
+.content > .me{
+    display: block;
+    position: relative;
+    padding-left: 10px;
+}
+
+.content > .tech{
+    display: block;
+    position: absolute;
+    right: 10px;
+}
+
+.hidden {
+    display: none;
+}
